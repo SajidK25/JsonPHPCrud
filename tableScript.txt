@@ -1,0 +1,18 @@
+CREATE TABLE user (
+id int(10) unsigned NOT NULL AUTO_INCREMENT,
+username varchar(32) NOT NULL DEFAULT '',
+password varchar(32) NOT NULL DEFAULT '',
+full_name varchar(255) NOT NULL DEFAULT '',
+PRIMARY KEY (id)
+);
+INSERT INTO user VALUES (1,'user1','password1','user one'),(2,'user2','password2','user two');
+
+CREATE TABLE color (
+id int(10) unsigned NOT NULL AUTO_INCREMENT,
+name varchar(100) NOT NULL DEFAULT '',
+red tinyint(3) unsigned NOT NULL,
+green tinyint(3) unsigned NOT NULL,
+blue tinyint(3) unsigned NOT NULL,
+PRIMARY KEY (id)
+);
+INSERT INTO color VALUES (1,'black',0,0,0),(2,'white',255,255,255),(3,'red',255,0,0),(4,'green',0,255,0),(5,'blue',0,0,255),(6,'grey',128,128,128);
